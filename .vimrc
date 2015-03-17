@@ -189,3 +189,7 @@ nnoremap <leader>e :q<cr>
 
 " Save with leader w.
 nmap <leader>w :w!<cr>
+
+" Remember selection when indenting.
+vnoremap < <gv
+vnoremap > >gv
