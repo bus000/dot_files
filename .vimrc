@@ -69,7 +69,7 @@ runtime macros/matchit.vim
 """"""""""""""""""
 
 " Make vertical bar at 81'st character.
-set cc=81
+set colorcolumn=81
 
 " Show 10 lines under and over the cursor when scrolling.
 set so=10
@@ -176,6 +176,9 @@ set noswapfile
 
 " Make vim detect the type of the file it is opening.
 filetype detect
+
+" Keep a history of 1000 undos.
+set undolevels=1000
 
 """"""""""""""""""
 " Keymappings
