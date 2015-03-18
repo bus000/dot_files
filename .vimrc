@@ -38,6 +38,9 @@ Plugin 'airblade/vim-gitgutter'
 " A more powerful line at bottom of screen.
 Bundle 'Lokaltog/vim-powerline'
 
+" Fuzzy search files.
+Plugin 'kien/ctrlp.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -202,3 +205,6 @@ nmap <leader>w :w!<cr>
 " Remember selection when indenting.
 vnoremap < <gv
 vnoremap > >gv
+
+" Dot in normal mode invoke ctrl p.
+nnoremap . :CtrlP<cr>
