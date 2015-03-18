@@ -47,6 +47,9 @@ Bundle 'terryma/vim-multiple-cursors'
 " Makes vim automatically close parenthesis and quotes.
 Bundle 'Raimondi/delimitMate'
 
+" Plugin for outcommenting lines.
+Bundle 'scrooloose/nerdcommenter'
+
 call vundle#end()
 filetype plugin indent on
 
