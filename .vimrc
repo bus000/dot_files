@@ -35,6 +35,9 @@ Plugin 'matchit.zip'
 " Show git diff in the right column.
 Plugin 'airblade/vim-gitgutter'
 
+" A more powerful line at bottom of screen.
+Bundle 'Lokaltog/vim-powerline'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -118,6 +121,9 @@ set foldlevel=20
 
 " Make vim not care that a buffer is not saved when opening a new buffer.
 set hidden
+
+" Always show statusline.
+set laststatus=2
 
 """"""""""""""""""
 " Colors and Fonts
