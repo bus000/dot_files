@@ -47,6 +47,13 @@ Bundle 'terryma/vim-multiple-cursors'
 " Makes vim automatically close parenthesis and quotes.
 Bundle 'Raimondi/delimitMate'
 
+" Automatically create tag files.
+Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-misc'
+
+" Jump to definitions in tag file.
+Bundle 'majutsushi/tagbar'
+
 " Plugin for outcommenting lines.
 Bundle 'scrooloose/nerdcommenter'
 
@@ -217,3 +224,6 @@ vnoremap > >gv
 
 " Dot in normal mode invoke ctrl p.
 nnoremap . :CtrlP<cr>
+
+" Map tagbar to F8.
+nnoremap <F8> :TagbarToggle<CR>
