@@ -44,6 +44,9 @@ Plugin 'kien/ctrlp.vim'
 " Multiple cursors for vim.
 Bundle 'terryma/vim-multiple-cursors'
 
+" Makes vim automatically close parenthesis and quotes.
+Bundle 'Raimondi/delimitMate'
+
 call vundle#end()
 filetype plugin indent on
 
