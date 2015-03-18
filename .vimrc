@@ -41,6 +41,9 @@ Bundle 'Lokaltog/vim-powerline'
 " Fuzzy search files.
 Plugin 'kien/ctrlp.vim'
 
+" Multiple cursors for vim.
+Bundle 'terryma/vim-multiple-cursors'
+
 call vundle#end()
 filetype plugin indent on
 
