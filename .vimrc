@@ -222,8 +222,5 @@ nmap <leader>w :w!<cr>
 vnoremap < <gv
 vnoremap > >gv
 
-" Dot in normal mode invoke ctrl p.
-nnoremap . :CtrlP<cr>
-
 " Map tagbar to F8.
 nnoremap <F8> :TagbarToggle<CR>
