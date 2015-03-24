@@ -224,3 +224,6 @@ vnoremap > >gv
 
 " Map tagbar to F8.
 nnoremap <F8> :TagbarToggle<CR>
+
+" Set zc to close all outer layer folds.
+nnoremap zc :%foldc<CR>
