@@ -227,3 +227,7 @@ nnoremap <F8> :TagbarToggle<CR>
 
 " Set zc to close all outer layer folds.
 nnoremap zc :%foldc<CR>
+
+" Make enter create new lines without going to insert mode.
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
