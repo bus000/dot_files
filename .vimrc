@@ -231,3 +231,9 @@ nnoremap zc :%foldc<CR>
 " Make enter create new lines without going to insert mode.
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+
+" Remove search highlighting with leader + n.
+nnoremap <leader>n :nohlsearch<CR>
+
+" Split to to windows in same file with leader + s.
+nnoremap <leader>s :vsplit<CR>
