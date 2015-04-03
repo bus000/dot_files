@@ -231,3 +231,9 @@ nnoremap <leader>n :nohlsearch<CR>
 
 " Split to to windows in same file with leader + s.
 nnoremap <leader>s :vsplit<CR>
+
+" Go to terminal with leader + t.
+nnoremap <leader>t :shell<CR>
+
+" Do leader + f to reformat a paragraph.
+nnoremap <leader>f {!}par -w80<CR>
