@@ -24,8 +24,6 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-" Place plugins here.
-
 " The color theme Gruvbox.
 Plugin 'morhetz/gruvbox'
 
@@ -175,20 +173,16 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-" Highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
-
 " Remove trailing space on save.
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Set spelling
+" Set spelling.
 set spell
 set spelllang=en_gb
+
+" Make vim show tab characters.
+set listchars=trail:·,tab:»·
+set list
 
 """"""""""""""""""
 " Files, Backup and Undo
