@@ -237,3 +237,6 @@ nnoremap <leader>t :shell<CR>
 
 " Do leader + f to reformat a paragraph.
 nnoremap <leader>f {!}par -w80<CR>
+
+" Search for visually selected text, using // in visual mode.
+vnoremap // y/<C-R>"<CR>
