@@ -59,6 +59,9 @@ Bundle 'scrooloose/nerdcommenter'
 " used.
 Bundle 'ajh17/VimCompletesMe'
 
+" Surround words, visual selection and more in parenthesis quotes and more.
+Plugin 'Surround.vim'
+
 call vundle#end()
 filetype plugin indent on
 
