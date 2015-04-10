@@ -13,7 +13,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""
-" Bundle Manager
+" Bundle Manager:
 """"""""""""""""""
 
 set nocompatible
@@ -55,11 +55,15 @@ Bundle 'majutsushi/tagbar'
 " Plugin for outcommenting lines.
 Bundle 'scrooloose/nerdcommenter'
 
+" Better use for tab key which now switch functionality based on where it is
+" used.
+Bundle 'ajh17/VimCompletesMe'
+
 call vundle#end()
 filetype plugin indent on
 
 """"""""""""""""""
-" General
+" General:
 """"""""""""""""""
 
 " Set the history length.
@@ -85,7 +89,7 @@ set backspace=2
 runtime macros/matchit.vim
 
 """"""""""""""""""
-" UI
+" UI:
 """"""""""""""""""
 
 " Make vertical bar at 81'st character.
@@ -143,7 +147,7 @@ set hidden
 set laststatus=2
 
 """"""""""""""""""
-" Colors and Fonts
+" Colors and Fonts:
 """"""""""""""""""
 
 " Turn on syntax hightlighting.
@@ -160,7 +164,7 @@ set t_Co=256
 set encoding=utf8
 
 """"""""""""""""""
-" Text, Tab and Indent
+" Text, Tab and Indent:
 """"""""""""""""""
 
 " Use spaces like a real man.
@@ -185,7 +189,7 @@ set listchars=trail:·,tab:»·
 set list
 
 """"""""""""""""""
-" Files, Backup and Undo
+" Files, Backup and Undo:
 """"""""""""""""""
 
 " Turn backup off.
@@ -200,7 +204,7 @@ filetype detect
 set undolevels=1000
 
 """"""""""""""""""
-" Keymappings
+" Keymappings:
 """"""""""""""""""
 
 " Map space to go to insert mode.
