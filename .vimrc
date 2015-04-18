@@ -62,6 +62,12 @@ Bundle 'ajh17/VimCompletesMe'
 " Surround words, visual selection and more in parenthesis quotes and more.
 Plugin 'Surround.vim'
 
+" Add support for repeats of more of the plugin commands.
+Plugin 'repeat.vim'
+
+" * and # search forwards and backwards for visual selected text.
+Bundle 'bronson/vim-visual-star-search'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -148,6 +154,10 @@ set hidden
 
 " Always show statusline.
 set laststatus=2
+
+" Set the line numbers to be relative to make moving around faster.
+set number
+set relativenumber
 
 """"""""""""""""""
 " Colors and Fonts:
