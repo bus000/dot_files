@@ -101,9 +101,6 @@ runtime macros/matchit.vim
 " UI:
 """"""""""""""""""
 
-" Make vertical bar at 81'st character.
-set colorcolumn=81
-
 " Show 10 lines under and over the cursor when scrolling.
 set so=10
 
@@ -193,6 +190,12 @@ set tabstop=4
 " Remove trailing space on save.
 autocmd BufWritePre * :%s/\s\+$//e
 
+augroup highlightingLongLines
+  autocmd!
+  autocmd FileType *        match ErrorMsg '\%>80v.\+'
+  autocmd FileType calendar match none
+augroup END
+
 " Set spelling.
 set spell
 set spelllang=en_gb
@@ -254,3 +257,20 @@ nnoremap <leader>t :shell<CR>
 
 " Do leader + f to reformat a paragraph.
 nnoremap <leader>f {!}par -w80<CR>
+
+" Make capital Y yank the rest of the line.
+nnoremap Y y$
+
+" Resize windows with the arrow keys
+nnoremap <up>    <C-W>+
+nnoremap <down>  <C-W>-
+nnoremap <left>  3<C-W>>
+nnoremap <right> 3<C-W><
+
+" Spell correct current word
+imap <c-z> <esc><leader>zea
+
+" Use leader + ev to edit .vimrc file and leader + sv to reload the .vimrc
+" file.
+noremap <leader>ev :tabedit $MYVIMRC<cr>
+noremap <leader>sv :source $MYVIMRC<cr>:e<cr>
