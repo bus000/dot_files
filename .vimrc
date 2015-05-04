@@ -140,8 +140,8 @@ set tm=500
 " Change fold to consider lines with equal indent as a fold block.
 set foldmethod=syntax
 
-" Set a foldcolumn in left side of screen showing folds.
-set foldcolumn=1
+" Remove foldcolumn from the left hand side.
+set foldcolumn=0
 
 " Make vim open files with no fold.
 set foldlevel=20
@@ -190,11 +190,12 @@ set tabstop=4
 " Remove trailing space on save.
 autocmd BufWritePre * :%s/\s\+$//e
 
-augroup highlightingLongLines
-  autocmd!
+" Highlight long lines.
+"augroup highlightingLongLines
+  "autocmd!
   autocmd FileType *        match ErrorMsg '\%>80v.\+'
   autocmd FileType calendar match none
-augroup END
+"augroup END
 
 " Set spelling.
 set spell
