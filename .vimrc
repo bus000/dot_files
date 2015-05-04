@@ -30,7 +30,7 @@ Plugin 'morhetz/gruvbox'
 " Makes % match tags in html and xml.
 Plugin 'matchit.zip'
 
-" Show git diff in the right column.
+" Show git diff in the left column.
 Plugin 'airblade/vim-gitgutter'
 
 " A more powerful line at bottom of screen.
