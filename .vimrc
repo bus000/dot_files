@@ -65,6 +65,12 @@ Plugin 'Surround.vim'
 " Add support for repeats of more of the plugin commands.
 Plugin 'repeat.vim'
 
+" Easily align of text objects in vim.
+Plugin 'junegunn/vim-easy-align'
+
+Plugin 'terryma/vim-expand-region'
+
+
 " * and # search forwards and backwards for visual selected text.
 Bundle 'bronson/vim-visual-star-search'
 
@@ -122,6 +128,9 @@ set hlsearch
 " Makes search highlight resuls while searching.
 set incsearch
 
+" Highlight the line with the cursor.
+set cursorline
+
 " Better regular expressions.
 set magic
 
@@ -155,6 +164,12 @@ set laststatus=2
 " Set the line numbers to be relative to make moving around faster.
 set number
 set relativenumber
+
+" Ignore compiled files.
+set wildignore=*.o,*~,*.pyc
+
+" Don't draw the screen in the middle of executing macros.
+set lazyredraw
 
 """"""""""""""""""
 " Colors and Fonts:
@@ -231,7 +246,7 @@ nnoremap <Space> i
 nnoremap <leader>e :q<cr>
 
 " Save with leader w.
-nmap <leader>w :w!<cr>
+nnoremap <leader>w :w!<cr>
 
 " Remember selection when indenting.
 vnoremap < <gv
@@ -244,8 +259,8 @@ nnoremap <F8> :TagbarToggle<CR>
 nnoremap zc :%foldc<CR>
 
 " Make enter create new lines without going to insert mode.
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+nnoremap <S-Enter> O<Esc>
+nnoremap <CR> o<Esc>
 
 " Remove search highlighting with leader + n.
 nnoremap <leader>n :nohlsearch<CR>
@@ -268,10 +283,24 @@ nnoremap <down>  <C-W>-
 nnoremap <left>  3<C-W>>
 nnoremap <right> 3<C-W><
 
-" Spell correct current word
-imap <c-z> <esc><leader>zea
+" Spell correct current word.
+inoremap <c-z> <esc><leader>zea
 
 " Use leader + ev to edit .vimrc file and leader + sv to reload the .vimrc
 " file.
 noremap <leader>ev :tabedit $MYVIMRC<cr>
 noremap <leader>sv :source $MYVIMRC<cr>:e<cr>
+
+" Save vim session and reopen with vim -S.
+nnoremap <leader>m :mksession<CR>
+
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" Mapping for common latex text modifiers.
+inoremap <c-t> \texttt{}<Esc>i
+inoremap <c-b> \textbf{}<Esc>i
+inoremap <c-f> \textit{}<Esc>i
