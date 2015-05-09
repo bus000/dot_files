@@ -13,12 +13,15 @@ alias 3=cd\ ../../../
 alias 2=cd\ ../../
 alias 1=cd\ ../
 
+# Make tmux word with colors.
+alias tmux="TERM=screen-256color-bce tmux"
+
 # Find the parent of the shell process.
 PARENT_NAME=$(ps -o comm= $PPID)
 
 # Print a random quote when the terminal opens only if the parent is not vim.
 if [ $PARENT_NAME != 'vim' ]; then
-    ~/Dropbox/andet/quotes/randomquote.py | cowthink | lolcat
+    ~/Dropbox/andet/quotes/randomquote.py | cowthink
 fi
 
 # If not running interactively, don't do anything
