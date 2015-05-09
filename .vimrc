@@ -68,8 +68,11 @@ Plugin 'repeat.vim'
 " Easily align of text objects in vim.
 Plugin 'junegunn/vim-easy-align'
 
+" Expand a visual selection with + and underscore.
 Plugin 'terryma/vim-expand-region'
 
+" Distraction free writing.
+Plugin 'junegunn/goyo.vim'
 
 " * and # search forwards and backwards for visual selected text.
 Bundle 'bronson/vim-visual-star-search'
