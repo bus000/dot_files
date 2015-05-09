@@ -307,3 +307,6 @@ nmap ga <Plug>(EasyAlign)
 inoremap <c-t> \texttt{}<Esc>i
 inoremap <c-b> \textbf{}<Esc>i
 inoremap <c-f> \textit{}<Esc>i
+
+" Mapping for toggling Goyo mode.
+nnoremap <leader>g :Goyo<CR>
