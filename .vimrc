@@ -251,10 +251,6 @@ nnoremap <leader>e :q<cr>
 " Save with leader w.
 nnoremap <leader>w :w!<cr>
 
-" Remember selection when indenting.
-vnoremap < <gv
-vnoremap > >gv
-
 " Map tagbar to F8.
 nnoremap <F8> :TagbarToggle<CR>
 
@@ -286,9 +282,6 @@ nnoremap <down>  <C-W>-
 nnoremap <left>  3<C-W>>
 nnoremap <right> 3<C-W><
 
-" Spell correct current word.
-inoremap <c-z> <esc><leader>zea
-
 " Use leader + ev to edit .vimrc file and leader + sv to reload the .vimrc
 " file.
 noremap <leader>ev :tabedit $MYVIMRC<cr>
@@ -297,16 +290,23 @@ noremap <leader>sv :source $MYVIMRC<cr>:e<cr>
 " Save vim session and reopen with vim -S.
 nnoremap <leader>m :mksession<CR>
 
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
-vmap <Enter> <Plug>(EasyAlign)
-
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Mapping for toggling Goyo mode.
+nnoremap <leader>g :Goyo<CR>
 
 " Mapping for common latex text modifiers.
 inoremap <c-t> \texttt{}<Esc>i
 inoremap <c-b> \textbf{}<Esc>i
 inoremap <c-f> \textit{}<Esc>i
 
-" Mapping for toggling Goyo mode.
-nnoremap <leader>g :Goyo<CR>
+" Spell correct current word.
+inoremap <c-z> <esc><leader>zea
+
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Remember selection when indenting.
+vnoremap < <gv
+vnoremap > >gv
