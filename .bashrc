@@ -13,9 +13,6 @@ alias 3=cd\ ../../../
 alias 2=cd\ ../../
 alias 1=cd\ ../
 
-# Make tmux word with colors.
-alias tmux="TERM=screen-256color-bce tmux"
-
 # Find the parent of the shell process.
 PARENT_NAME=$(ps -o comm= $PPID)
 
