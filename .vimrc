@@ -299,6 +299,9 @@ nnoremap <leader>g :Goyo<CR>
 " Copy all of the text in the buffer.
 nnoremap <leader>a ggvG$y<C-o><C-o>
 
+" Visual in quotes.
+nnoremap viq vi"
+
 " Mapping for common latex text modifiers.
 inoremap <c-t> \texttt{}<Esc>i
 inoremap <c-b> \textbf{}<Esc>i
