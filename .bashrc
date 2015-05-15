@@ -13,6 +13,8 @@ alias 3=cd\ ../../../
 alias 2=cd\ ../../
 alias 1=cd\ ../
 
+alias tmux=tmux\ -2
+
 # Find the parent of the shell process.
 PARENT_NAME=$(ps -o comm= $PPID)
 
