@@ -302,6 +302,10 @@ nnoremap <leader>a ggvG$y<C-o><C-o>
 " Visual in quotes.
 nnoremap viq vi"
 
+" Easier copy pasting to system clipboard.
+nnoremap <leader>p "+
+vnoremap <leader>p "+
+
 " Mapping for common latex text modifiers.
 inoremap <c-t> \texttt{}<Esc>i
 inoremap <c-b> \textbf{}<Esc>i
