@@ -174,6 +174,9 @@ set wildignore=*.o,*~,*.pyc
 " Don't draw the screen in the middle of executing macros.
 set lazyredraw
 
+" Don't syntax highlight long lines.
+set synmaxcol=400
+
 """"""""""""""""""
 " Colors and Fonts:
 """"""""""""""""""
@@ -313,6 +316,9 @@ inoremap <c-f> \textit{}<Esc>i
 
 " Spell correct current word.
 inoremap <c-z> <esc><leader>zea
+
+" Mapping to make the word just typed upper case in insert mode.
+inoremap <C-u> <esc>mzgUiw`za
 
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
