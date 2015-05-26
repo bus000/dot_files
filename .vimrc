@@ -305,6 +305,9 @@ nnoremap <leader>a ggvG$y<C-o><C-o>
 " Visual in quotes.
 nnoremap viq vi"
 
+" Use backspace to delete characters in normal mode.
+nnoremap <BS> i<BS><Esc>i
+
 " Easier copy pasting to system clipboard.
 nnoremap <leader>p "+
 vnoremap <leader>p "+
@@ -319,6 +322,9 @@ inoremap <c-z> <esc><leader>zea
 
 " Mapping to make the word just typed upper case in insert mode.
 inoremap <C-u> <esc>mzgUiw`za
+
+" Use ctrl backspace to delete a whole word in insert mode.
+imap <C-BS> <C-W>
 
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
