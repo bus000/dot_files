@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 alias clera=echo\ "fucking idiot"
 alias 9=cd\ ../../../../../../../../../
 alias 8=cd\ ../../../../../../../../
@@ -20,14 +26,8 @@ PARENT_NAME=$(ps -o comm= $PPID)
 
 # Print a random quote when the terminal opens only if the parent is not vim.
 if [ $PARENT_NAME != 'vim' ]; then
-    ~/Dropbox/andet/quotes/randomquote.py | cowthink
+    ~/git/quotes/randomquote.py | cowthink
 fi
-
-# If not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
