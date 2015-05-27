@@ -10,6 +10,7 @@
 "  -- Text, Tab and Indent
 "  -- Files, Backup and Undo
 "  -- Keymappings
+"  -- Sources
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""
@@ -265,7 +266,7 @@ nnoremap <S-Enter> O<Esc>
 nnoremap <CR> o<Esc>
 
 " Remove search highlighting with leader + n.
-nnoremap <leader>n :nohlsearch<CR>
+nnoremap <silent> <leader>n :nohlsearch<CR>:call clearmatches()<cr>
 
 " Split to to windows in same file with leader + s.
 nnoremap <leader>s :vsplit<CR>
@@ -332,3 +333,23 @@ vmap <Enter> <Plug>(EasyAlign)
 " Remember selection when indenting.
 vnoremap < <gv
 vnoremap > >gv
+
+" Visual selection in tags with big V is selecting by line.
+nnoremap Vit vitVkoj
+nnoremap Vat vatV
+nnoremap Vab vabV
+nnoremap VaB vaBV
+
+" Make vim movement move in lines displayed and not acutal lines.
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
+""""""""""""""""""
+" Sources:
+""""""""""""""""""
+
+" https://bitbucket.org/sjl/dotfiles/src
+
+" https://github.com/davidpdrsn/dotfiles
