@@ -303,8 +303,13 @@ nnoremap <leader>g :Goyo<CR>
 " Copy all of the text in the buffer.
 nnoremap <leader>a ggvG$y<C-o><C-o>
 
-" Visual in quotes.
+" Use q to reference quotes.
 nnoremap viq vi"
+nnoremap vaq va"
+nnoremap diq di"
+nnoremap daq da"
+nnoremap ciq ci"
+nnoremap caq ca"
 
 " Use backspace to delete characters in normal mode.
 nnoremap <BS> i<BS><Esc>i
