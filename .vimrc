@@ -300,8 +300,8 @@ nmap ga <Plug>(EasyAlign)
 " Mapping for toggling Goyo mode.
 nnoremap <leader>g :Goyo<CR>
 
-" Copy all of the text in the buffer.
-nnoremap <leader>a ggvG$y<C-o><C-o>
+" Select all text as visual.
+nnoremap <leader>a ggVG
 
 " Use q to reference quotes.
 nnoremap viq vi"
