@@ -315,8 +315,35 @@ nnoremap caq ca"
 nnoremap <BS> i<BS><Esc>i
 
 " Easier copy pasting to system clipboard.
-nnoremap <leader>p "+
-vnoremap <leader>p "+
+nnoremap <leader>p "+p
+vnoremap <leader>p "+p
+vnoremap <leader>c "+y
+nnoremap <leader>ciw "+yiw
+nnoremap <leader>caw "+yaw
+
+nnoremap <leader>ciq "+yi"
+nnoremap <leader>caq "+ya"
+
+nnoremap <leader>cip "+yip
+nnoremap <leader>cap "+yap
+
+nnoremap <leader>cib "+cib
+nnoremap <leader>cab "+cab
+
+nnoremap <leader>ci) "+ci)
+nnoremap <leader>ca) "+ca)
+nnoremap <leader>ci( "+ci(
+nnoremap <leader>ca( "+ca(
+
+nnoremap <leader>ci{ "+ci{
+nnoremap <leader>ca{ "+ca{
+nnoremap <leader>ci} "+ci}
+nnoremap <leader>ca} "+ca}
+
+nnoremap <leader>ci[ "+ci[
+nnoremap <leader>ca[ "+ca[
+nnoremap <leader>ci] "+ci]
+nnoremap <leader>ca] "+ca]
 
 " Mapping for common latex text modifiers.
 inoremap <c-t> \texttt{}<Esc>i
