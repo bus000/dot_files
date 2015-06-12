@@ -266,7 +266,7 @@ nnoremap <S-Enter> O<Esc>
 nnoremap <CR> o<Esc>
 
 " Remove search highlighting with leader + n.
-nnoremap <silent> <leader>n :nohlsearch<CR>:call clearmatches()<cr>
+nnoremap <silent> <leader>n :nohlsearch<CR>
 
 " Split to to windows in same file with leader + s.
 nnoremap <leader>s :vsplit<CR>
@@ -288,8 +288,8 @@ nnoremap <right> 3<C-W><
 
 " Use leader + ev to edit .vimrc file and leader + sv to reload the .vimrc
 " file.
-noremap <leader>ev :tabedit $MYVIMRC<cr>
-noremap <leader>sv :source $MYVIMRC<cr>:e<cr>
+noremap <leader>ev :tabedit $MYVIMRC<CR>
+noremap <leader>sv :source $MYVIMRC<CR>:e<CR>
 
 " Save vim session and reopen with vim -S.
 nnoremap <leader>m :mksession<CR>
@@ -377,6 +377,12 @@ noremap j gj
 noremap k gk
 noremap gj j
 noremap gk k
+
+" The cousin of the already working delete in paragraph (dip).
+nnoremap dp d}
+
+" Fast exiting of multiple files.
+nnoremap <leader>q :qa<CR>
 
 """"""""""""""""""
 " Sources:
