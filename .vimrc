@@ -312,7 +312,7 @@ nnoremap ciq ci"
 nnoremap caq ca"
 
 " Use backspace to delete characters in normal mode.
-nnoremap <BS> i<BS><Esc>i
+nnoremap <BS> i<BS><Esc>l
 
 " Easier copy pasting to system clipboard.
 nnoremap <leader>p "+p
