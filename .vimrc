@@ -359,6 +359,10 @@ inoremap <C-u> <esc>mzgUiw`za
 " Use ctrl backspace to delete a whole word in insert mode.
 imap <C-BS> <C-W>
 
+" Go to normal mode with jk in insert mode and visual mode.
+inoremap jk <esc>
+vnoremap jk <esc>
+
 " Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 vmap <Enter> <Plug>(EasyAlign)
 
