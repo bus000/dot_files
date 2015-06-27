@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Load resources
+
+xrdb -merge .Xresources &
+
+# Set up an icon tray
+#/*stalonetray &*/
+
+# Fire up apps
+
+#/*xscreensaver -no-splash &*/
+
+# xpmroot ~/pictures/background/12_05_2015.png
+
+# Set background image with feh
+feh --bg-scale ~/pictures/background/12_05_2015.png &
+
+if [ -x /usr/bin/nm-applet ] ; then
+   nm-applet --sm-disable &
+fi
+
+exec xmonad
