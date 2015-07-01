@@ -1,0 +1,9 @@
+! Set how many lines are used saved.
+Xterm*saveLines: 4096
+
+! Set colors to be switched from background:white text:black to reverse.
+XTerm*reverseVideo: on
+
+! Set the font to be used.
+xterm*faceName: Liberation Mono:size=9:antialias=true
+xterm*font: 7x13
