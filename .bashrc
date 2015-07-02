@@ -8,6 +8,8 @@ case $- in
       *) return;;
 esac
 
+export EDITOR="vim"
+
 alias clera=echo\ "fucking idiot"
 alias 9=cd\ ../../../../../../../../../
 alias 8=cd\ ../../../../../../../../
@@ -26,7 +28,7 @@ PARENT_NAME=$(ps -o comm= $PPID)
 
 # Print a random quote when the terminal opens only if the parent is not vim.
 if [ $PARENT_NAME != 'vim' ]; then
-    ~/git/quotes/randomquote.py | cowthink
+    ~/Dropbox/andet/quotes/randomquote.py | cowthink
 fi
 
 # don't put duplicate lines or lines starting with space in the history.
