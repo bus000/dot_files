@@ -78,6 +78,9 @@ Plugin 'junegunn/goyo.vim'
 " * and # search forwards and backwards for visual selected text.
 Bundle 'bronson/vim-visual-star-search'
 
+" Save vim session when vim is closed.
+Plugin 'https://github.com/tpope/vim-obsession'
+
 call vundle#end()
 filetype plugin indent on
 
