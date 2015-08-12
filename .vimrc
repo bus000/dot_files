@@ -107,6 +107,9 @@ set backspace=2
 " Turn on % matching xml tags.
 runtime macros/matchit.vim
 
+" Reload files when they change on disc.
+set autoread
+
 """"""""""""""""""
 " UI:
 """"""""""""""""""
