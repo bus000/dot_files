@@ -98,9 +98,6 @@ set autoread
 let mapleader = ","
 let g:mapleader = ","
 
-" Map colon to semicolon.
-nmap ; :
-
 " Working dir is same as file
 set autochdir
 
@@ -390,6 +387,10 @@ nnoremap dp d}
 
 " Fast exiting of multiple files.
 nnoremap <leader>q :qa<CR>
+
+" Map colon to semicolon and reversed.
+nnoremap ; :
+nnoremap : ;
 
 """"""""""""""""""
 " Sources:
