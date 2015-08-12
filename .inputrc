@@ -1,0 +1,15 @@
+# Glorious vi!
+set editing-mode vi
+
+# Make bash search for commands starting with the typed command when going up.
+"\e[A":history-search-backward
+"\e[B":history-search-forward]]"
+
+# Show all completions on first tab no matter the number.
+set show-all-if-ambiguous on
+
+set keymap vi-insert
+"jk": "\e"
+
+set keymap vi-command
+" ": "i"
