@@ -25,3 +25,6 @@ ln -s $DIR/xinitrc ~/.xinitrc
 
 rm ~/.xsessionrc 2> /dev/null
 ln -s $DIR/xsessionrc ~/.xsessionrc
+
+rm ~/.xmobarrc 2> /dev/null
+ln -s $DIR/xmobarrc ~/.xmobarrc
