@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Load resources
-
 xrdb -merge .Xresources &
 
 # Set up an icon tray
