@@ -11,7 +11,7 @@ Config {
     -- Layout.
     , sepChar = "%"
     , alignSep = "}{"
-    , template = "%StdinReader% | %battery% | %multicpu% | %memory% * %swap%}{<fc=#ee9a00>%date%</fc> | %uname% | %EKCH% "
+    , template = "%StdinReader% | %battery% | %multicpu% | %memory%}{<fc=#ee9a00>%date%</fc> | %uname% | %EKCH% "
 
     -- Plugin.
     , commands =
