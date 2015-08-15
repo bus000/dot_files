@@ -18,7 +18,7 @@ Config {
         -- Weather.
         [ Run Weather "EKCH" ["-t","<tempC>C","-L","18","-H","25","--normal","green","--high","red","--low","lightblue"] 36000
 
-        -- cpu activity monitor
+        -- CPU activity.
         , Run MultiCpu       [ "--template" , "Cpu: <total0>% <total1>% <total2>% <total3>%"
                              , "--Low"      , "50"         -- units: %
                              , "--High"     , "85"         -- units: %
@@ -26,11 +26,20 @@ Config {
                              , "--normal"   , "darkorange"
                              , "--high"     , "darkred"
                              ] 10
+
+        -- Memory.
         , Run Memory ["-t","Mem: <usedratio>%"] 10
-        , Run Swap [] 10
+
+        -- System information.
         , Run Com "uname" ["-s","-r"] "" 36000
+
+        -- Time.
         , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+
+        -- Information from current active window.
         , Run StdinReader
+
+        -- Battery information.
         , Run Battery        [ "--template" , "Batt: <acstatus>"
                              , "--Low"      , "10"        -- units: %
                              , "--High"     , "80"        -- units: %
