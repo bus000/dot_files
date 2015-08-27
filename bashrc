@@ -9,6 +9,7 @@ case $- in
 esac
 
 export EDITOR="vim"
+export PAGER="less -r"
 
 alias clera=echo\ "fucking idiot"
 alias 9=cd\ ../../../../../../../../../
