@@ -3,13 +3,10 @@ xsetroot -cursor_name left_ptr
 
 xrdb -merge .Xresources
 
-# Bachground picture.
-xpmroot ~/pictures/background/14_06_2015.png
-
 setxkbmap gb
 
-# British keyboard layout.
-#setxkbmap -layout en-gb
+# Set background.
+exec feh --bg-scale /usr/share/backgrounds/background.png &
 
 # Lanch xmonad.
 exec xmonad
