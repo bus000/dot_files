@@ -4,6 +4,9 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig(additionalKeys)
 import System.IO
+import XMonad.Actions.Volume
+import Data.Map
+import Data.Monoid
 
 main = do
     xmproc <- spawnPipe "xmobar ~/.xmobarrc"
@@ -17,4 +20,8 @@ main = do
             { ppOutput = hPutStrLn xmproc
             , ppTitle  = xmobarColor "green" "" . shorten 50
             }
+        , XMonad.keys = XMonad.keys defaultConfig `mappend`
+            \c -> fromList [ ((0, xK_F6), lowerVolume 4 >> return ())
+                           , ((0, xK_F7), raiseVolume 4 >> return ())
+                           ]
         }
