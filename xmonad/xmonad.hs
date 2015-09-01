@@ -21,7 +21,8 @@ main = do
             , ppTitle  = xmobarColor "green" "" . shorten 50
             }
         , XMonad.keys = XMonad.keys defaultConfig `mappend`
-            \c -> fromList [ ((0, xK_F6), lowerVolume 4 >> return ())
-                           , ((0, xK_F7), raiseVolume 4 >> return ())
+            \c -> fromList [ ((0, xK_F6), toggleMute >> return ())
+                           , ((0, xK_F7), setMute False >> lowerVolume 4 >> return ())
+                           , ((0, xK_F8), setMute False >> raiseVolume 4 >> return ())
                            ]
         }
