@@ -395,6 +395,9 @@ nnoremap <leader>q :qa<CR>
 nnoremap ; :
 nnoremap : ;
 
+" Start an equation in latex.
+inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<esc>ko
+
 """"""""""""""""""
 " Sources:
 """"""""""""""""""
