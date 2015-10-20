@@ -81,6 +81,9 @@ Bundle 'bronson/vim-visual-star-search'
 " Save vim session when vim is closed.
 Plugin 'https://github.com/tpope/vim-obsession'
 
+" Syntax hightlighting for nusmv.
+Plugin 'https://github.com/wannesm/wmnusmv.vim'
+
 call vundle#end()
 filetype plugin indent on
 
