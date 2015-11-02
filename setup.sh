@@ -29,9 +29,9 @@ ln -s $DIR/xsessionrc ~/.xsessionrc
 rm ~/.xmobarrc 2> /dev/null
 ln -s $DIR/xmobarrc ~/.xmobarrc
 
-rm /usr/share/backgrounds/background.png 2> /dev/null
-cp ./background.png /usr/share/backgrounds/background.png
-chmod a+r /usr/share/backgrounds/background.png
+sudo rm /usr/share/backgrounds/background.png 2> /dev/null
+sudo cp ./background.png /usr/share/backgrounds/background.png
+sudo chmod a+r /usr/share/backgrounds/background.png
 
 rm ~/.muttrc 2> /dev/null
 ln -s $DIR/muttrc ~/.muttrc
