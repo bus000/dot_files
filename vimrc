@@ -399,7 +399,7 @@ nnoremap ; :
 nnoremap : ;
 
 " Start an equation in latex.
-inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<esc>ko
+inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<CR><esc>kko
 
 """"""""""""""""""
 " Sources:
