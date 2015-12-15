@@ -241,6 +241,9 @@ set list
 " Files, Backup and Undo:
 """"""""""""""""""
 
+" Make easitags update tags file asynchronous and not block vim.
+let g:easytags_async = 1
+
 " Turn backup off.
 set nobackup
 set nowb
