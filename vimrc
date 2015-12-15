@@ -113,6 +113,10 @@ runtime macros/matchit.vim
 " Reload files when they change on disc.
 set autoread
 
+" Set tags file to be located one folder up in the tree.
+set tags=./tags
+let g:easytags_dynamic_files = 1
+
 """"""""""""""""""
 " UI:
 """"""""""""""""""
