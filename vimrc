@@ -288,7 +288,7 @@ nnoremap <leader>s :vsplit<CR>
 nnoremap <leader>t :shell<CR>
 
 " Do leader + f to reformat a paragraph.
-nnoremap <leader>f {!}par -w80<CR>
+nnoremap <leader>f mm{!}par -w80<CR>`m
 
 " Make capital Y yank the rest of the line.
 nnoremap Y y$
