@@ -38,3 +38,6 @@ ln -s $DIR/muttrc ~/.muttrc
 
 rm ~/.offlineimaprc 2> /dev/null
 ln -s $DIR/offlineimaprc ~/.offlineimaprc
+
+rm ~/.gdbinit 2> /dev/null
+ln -s $DIR/gdbinit ~/.gdbinit
