@@ -238,7 +238,7 @@ set listchars=trail:·,tab:»·
 set list
 
 " Don't indent the case in the switch statement in C.
-set cinoptions=l1
+set cinoptions=:0
 
 """"""""""""""""""
 " Files, Backup and Undo:
