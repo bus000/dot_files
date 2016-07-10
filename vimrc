@@ -215,9 +215,11 @@ set expandtab
 " Indent smart when using tab.
 set smarttab
 
-" Set tab width to 4.
+" Set tab width to 8 but indent with 4 spaces when tab is pressed.
 set shiftwidth=4
-set tabstop=4
+set tabstop=8
+set softtabstop=4
+set shiftround
 
 " Remove trailing space on save.
 autocmd BufWritePre * :%s/\s\+$//e
@@ -317,7 +319,7 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <leader>g :Goyo<CR>
 
 " Select all text as visual.
-nnoremap <leader>a ggVG
+nnoremap <leader>a maggVG
 
 " Use q to reference quotes.
 nnoremap viq vi"
