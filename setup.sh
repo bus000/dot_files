@@ -41,3 +41,6 @@ ln -s $DIR/offlineimaprc ~/.offlineimaprc
 
 rm ~/.gdbinit 2> /dev/null
 ln -s $DIR/gdbinit ~/.gdbinit
+
+rm ~/.haskelline 2> /dev/null
+ln -s $DIR/haskeline ~/.haskeline
