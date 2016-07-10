@@ -2,7 +2,7 @@
 set disassembly-flavor intel
 set disable-randomization off
 set pagination off
-set follow-fork-mode child
+set follow-fork-mode parent
 
 # History
 set history filename ~/.gdbhistory
