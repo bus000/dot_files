@@ -27,11 +27,6 @@ alias tmux=tmux\ -2
 # Find the parent of the shell process.
 PARENT_NAME=$(ps -o comm= $PPID)
 
-# Print a random quote when the terminal opens only if the parent is not vim.
-if [ $PARENT_NAME != 'vim' ]; then
-    ~/Dropbox/andet/quotes/randomquote.py | cowthink
-fi
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoredups:erasedups
