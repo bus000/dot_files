@@ -138,3 +138,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+# Print a random quote when the terminal opens only if the parent is not vim.
+export PATH=$PATH:/home/fluttershy/git/dot_files/quotes/
+if [ $PARENT_NAME != vim ]; then
+    randomquote.py | cowthink
+fi
