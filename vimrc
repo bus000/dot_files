@@ -84,6 +84,14 @@ Plugin 'https://github.com/tpope/vim-obsession'
 " Syntax hightlighting for nusmv.
 Plugin 'https://github.com/wannesm/wmnusmv.vim'
 
+" Displays types of Haskell expressions.
+Plugin 'https://github.com/eagletmt/ghcmod-vim'
+
+Plugin 'https://github.com/Shougo/vimproc.vim'
+
+" Sort haskell import when saving Haskell file.
+Plugin 'https://github.com/itchyny/vim-haskell-sort-import'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -241,6 +249,9 @@ set list
 
 " Don't indent the case in the switch statement in C.
 set cinoptions=:0
+
+" Sort Haskell import automatically in .hs files.
+autocmd BufWritePre <buffer> HaskellSortImport
 
 """"""""""""""""""
 " Files, Backup and Undo:
@@ -415,6 +426,9 @@ nnoremap : ;
 
 " Start an equation in latex.
 inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<CR><esc>kko
+
+" Display type of Haskell subexpression.
+nnoremap <C-t> :GhcModType<CR>
 
 """"""""""""""""""
 " Sources:

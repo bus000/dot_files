@@ -44,6 +44,9 @@ ln -s $DIR/haskeline ~/.haskeline
 rm ~/.ghci 2> /dev/null
 ln -s $DIR/ghci ~/.ghci
 
+rm ~/.stack/config.yaml 2> /dev/null
+ln -s $DIR/stack/config.yaml ~/.stack/config.yaml
+
 # Configure background photo.
 sudo rm /usr/share/backgrounds/background.png 2> /dev/null
 sudo cp ./background.png /usr/share/backgrounds/background.png
