@@ -430,6 +430,9 @@ inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<CR><esc>kko
 " Display type of Haskell subexpression.
 nnoremap <C-t> :GhcModType<CR>
 
+" Compute the result of the current latex mathematical expression selected.
+vnoremap <leader>e "1y:!latcal "<C-R>1"<CR>
+
 """"""""""""""""""
 " Sources:
 """"""""""""""""""
