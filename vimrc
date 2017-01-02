@@ -408,7 +408,7 @@ nnoremap VaB vaBV
 " Select in $ for latex math mode.
 nnoremap vi$ T$vt$
 
-" Make vim movement move in lines displayed and not acutal lines.
+" Make vim movement move in lines displayed and not actual lines.
 noremap j gj
 noremap k gk
 noremap gj j
