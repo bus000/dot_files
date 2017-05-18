@@ -14,20 +14,8 @@ ln -s $DIR/tmux.conf ~/.tmux.conf
 rm ~/.Xdefaults 2> /dev/null
 ln -s $DIR/Xdefaults ~/.Xdefaults
 
-rm -R ~/.xmonad 2> /dev/null
-ln -s $DIR/xmonad ~/.xmonad
-
 rm ~/.vimrc 2> /dev/null
 ln -s $DIR/vimrc ~/.vimrc
-
-rm ~/.xinitrc 2> /dev/null
-ln -s $DIR/xinitrc ~/.xinitrc
-
-rm ~/.xsessionrc 2> /dev/null
-ln -s $DIR/xsessionrc ~/.xsessionrc
-
-rm ~/.xmobarrc 2> /dev/null
-ln -s $DIR/xmobarrc ~/.xmobarrc
 
 rm ~/.muttrc 2> /dev/null
 ln -s $DIR/muttrc ~/.muttrc
@@ -46,17 +34,3 @@ ln -s $DIR/ghci ~/.ghci
 
 rm ~/.stack/config.yaml 2> /dev/null
 ln -s $DIR/stack/config.yaml ~/.stack/config.yaml
-
-# Configure background photo.
-sudo rm /usr/share/backgrounds/background.png 2> /dev/null
-sudo cp ./background.png /usr/share/backgrounds/background.png
-sudo chmod a+r /usr/share/backgrounds/background.png
-
-# Configure a quote to be written when logging in.
-sudo rm -R ./quotes 2> /dev/null
-git clone https://github.com/bus000/quotes
-echo '# Print a random quote when the terminal opens only if the parent is not vim.' >> bashrc
-echo 'export PATH=$PATH:'$DIR'/quotes/' >> bashrc
-echo 'if [ $PARENT_NAME != 'vim' ]; then' >> bashrc
-echo '    randomquote.py | cowthink' >> bashrc
-echo 'fi' >> bashrc
