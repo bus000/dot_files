@@ -8,7 +8,8 @@ case $- in
       *) return;;
 esac
 
-export EDITOR="vim"
+export VISUAL="nvim"
+export EDITOR="ed"
 export PAGER="less -r"
 
 alias clera=echo\ "fucking idiot"
