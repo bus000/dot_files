@@ -12,17 +12,6 @@ export VISUAL="nvim"
 export EDITOR="ed"
 export PAGER="less -r"
 
-alias clera=echo\ "fucking idiot"
-alias 9=cd\ ../../../../../../../../../
-alias 8=cd\ ../../../../../../../../
-alias 7=cd\ ../../../../../../../
-alias 6=cd\ ../../../../../../
-alias 5=cd\ ../../../../../
-alias 4=cd\ ../../../../
-alias 3=cd\ ../../../
-alias 2=cd\ ../../
-alias 1=cd\ ../
-
 alias tmux=tmux\ -2
 
 # Find the parent of the shell process.
