@@ -131,8 +131,3 @@ fi
 
 # Add cabal builds to path.
 export PATH=$PATH:~/.cabal/bin/
-
-# Print a random quote when the terminal opens only if the parent is not vim.
-if [ $PARENT_NAME != vim ]; then
-    quotes | cowthink
-fi
