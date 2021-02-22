@@ -39,22 +39,13 @@ Plug 'https://github.com/Raimondi/delimitMate'
 
 " Plugin for outcommenting lines.
 Plug 'https://github.com/scrooloose/nerdcommenter'
- 
+
 " Better use for tab key which now switch functionality based on where it is
 " used.
 Plug 'https://github.com/ajh17/VimCompletesMe'
 
-" Surround words, visual selection and more in parenthesis quotes and more.
-Plug 'https://github.com/tpope/vim-surround'
-
 " Add support for repeats of more of the plugin commands.
 Plug 'https://github.com/tpope/vim-repeat'
-
-" Sort haskell import when saving Haskell file.
-Plug 'https://github.com/itchyny/vim-haskell-sort-import'
-
-" Vim Language Server.
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 
@@ -221,9 +212,6 @@ set list
 " Don't indent the case in the switch statement in C.
 set cinoptions=:0
 
-" Sort Haskell import automatically in .hs files.
-autocmd BufWritePre <buffer> HaskellSortImport
-
 """"""""""""""""""
 " Files, Backup and Undo:
 """"""""""""""""""
@@ -294,9 +282,6 @@ noremap <leader>sv :source $MYVIMRC<CR>:e<CR>
 " Save vim session and reopen with vim -S.
 nnoremap <leader>m :mksession<CR>
 
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
 " Mapping for toggling Goyo mode.
 nnoremap <leader>g :Goyo<CR>
 
@@ -363,9 +348,6 @@ imap <C-BS> <C-W>
 inoremap jk <esc>
 vnoremap jk <esc>
 
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
-vmap <Enter> <Plug>(EasyAlign)
-
 " Remember selection when indenting.
 vnoremap < <gv
 vnoremap > >gv
@@ -397,17 +379,6 @@ nnoremap : ;
 
 " Start an equation in latex.
 inoremap <C-e> <esc><CR>o\begin{equation}<CR>\end{equation}<CR><esc>kko
-
-" Display type of Haskell subexpression.
-nnoremap <C-t> :GhcModType<CR>
-
-" Compute the result of the current latex mathematical expression selected.
-vnoremap <leader>e "1y:!latcal "<C-R>1"<CR>
-
-" Language server mappings.
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 
 tnoremap jk <C-\><C-n>
 tnoremap <A-h> <C-\><C-N><C-w>h

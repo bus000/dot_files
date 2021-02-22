@@ -23,5 +23,9 @@ ln -s $DIR/haskeline ~/.haskeline
 rm ~/.ghci 2> /dev/null
 ln -s $DIR/ghci ~/.ghci
 
+# Setup neovim.
 rm ~/.config/nvim/init.vim 2> /dev/null
 ln -s $DIR/init.vim ~/.config/nvim/init.vim
+
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
