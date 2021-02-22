@@ -1,7 +1,0 @@
-templates:
-    params:
-        author-email: magnus@stavngaard.dk
-        author-name: Magnus Stavngaard
-        category: Data
-        copyright: BSD2
-        github-username: bus000

@@ -23,8 +23,5 @@ ln -s $DIR/haskeline ~/.haskeline
 rm ~/.ghci 2> /dev/null
 ln -s $DIR/ghci ~/.ghci
 
-rm ~/.stack/config.yaml 2> /dev/null
-ln -s $DIR/stack/config.yaml ~/.stack/config.yaml
-
 rm ~/.config/nvim/init.vim 2> /dev/null
 ln -s $DIR/init.vim ~/.config/nvim/init.vim
