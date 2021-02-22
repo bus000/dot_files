@@ -17,9 +17,6 @@ ln -s $DIR/Xdefaults ~/.Xdefaults
 rm ~/.vimrc 2> /dev/null
 ln -s $DIR/vimrc ~/.vimrc
 
-rm ~/.offlineimaprc 2> /dev/null
-ln -s $DIR/offlineimaprc ~/.offlineimaprc
-
 rm ~/.gdbinit 2> /dev/null
 ln -s $DIR/gdbinit ~/.gdbinit
 
