@@ -11,9 +11,6 @@ ln -s $DIR/inputrc ~/.inputrc
 rm ~/.tmux.conf 2> /dev/null
 ln -s $DIR/tmux.conf ~/.tmux.conf
 
-rm ~/.vimrc 2> /dev/null
-ln -s $DIR/vimrc ~/.vimrc
-
 rm ~/.gdbinit 2> /dev/null
 ln -s $DIR/gdbinit ~/.gdbinit
 
